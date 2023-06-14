@@ -239,6 +239,15 @@ section.our-products {
     text-align: center;
 }
 
+section.our-products .ui.container {
+    width: 1170px;
+    padding-right: 6%;
+}
+section.ui.middle.aligned.stackable.grid.fluid.container {
+    padding-left: 1%;
+}
+
+
 
 /* brands icons css */
 .brands{
@@ -320,7 +329,9 @@ section.our-products {
     color: #656363;
     /* line-height: 20pt; */
 }
-
+section.ui.middle.aligned.stackable.grid.fluid.container .row{
+    padding-top: 0;
+}
 
 
 /* founders segment css */
@@ -489,6 +500,19 @@ footer{
 
 /* responsive css */
 
+
+@media screen  and (max-width: 1282px){
+    section.our-products .ui.container {
+        width: 1136px;
+        padding-right: 11%;
+    }
+    section.our-products {
+        margin-left: 2%;
+    }
+    .brands {
+        margin-left: 2%;
+    }
+}
 @media screen  and (max-width: 1200px){
     .right.menu a.item {
         font-size: 12pt;
@@ -502,6 +526,18 @@ footer{
     }
 }
 
+@media screen  and (max-width: 1080px){
+    section.our-products .ui.container {
+        width: 958px;
+        padding-right: 9%;
+    }
+    section.our-products {
+        margin-left: 3%;
+    }
+    .brands {
+        margin-left: 3%;
+    }
+}
 
 @media screen  and (max-width: 992px){
     .ui.menu:not(.vertical)>.menu {
@@ -552,6 +588,10 @@ footer{
         display:flex;
         align-items: center;
         justify-content: center;
+    }
+    section.our-products .ui.container {
+        width: 723px;
+        padding-right: 0;
     }
 }
 
@@ -688,6 +728,9 @@ footer{
     }
     .brands-img.four.wide.column{
         justify-content: normal;
+    }
+    .ui.vertical.stripe.segment.for-mt.for-pd{
+        margin-top: 80px;
     }
 }
 
