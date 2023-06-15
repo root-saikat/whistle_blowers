@@ -22,10 +22,52 @@
 }
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Nunito-extrabold";
+    src: url("./assets/font/Nunito-Bold.ttf")
+}
+@font-face {
+    font-family: "Nunito-regular";
+    src: url("./assets/font/Nunito-Regular.ttf")
+}
+@font-face {
+    font-family: "Nunito-light";
+    src: url("./assets/font/Nunito-Light.ttf")
+}
+
+
 
 body{
     font-family: 'poppins', sans-serif;
+    font-family: 'nunito', sans-serif;
+}
+
+.nunito-bold{
+    font-family: "Nunito-extrabold";
+}
+.nunito-normal{
+    font-family:"Nunito-regular";
+}
+.nunito-light{
+    font-family:"Nunito-light";
+}
+.popins-bold{
+    font-family: 'poppins';
+    font-weight: 700;
+}
+.poppins-regular{
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+.drop-shaadow{
+    filter: drop-shadow(0 2px 0.3rem rgba(0, 0, 0, 0.486));
+}
+
+.buttons .ui.basic.green.button:hover{
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .green{
@@ -116,12 +158,14 @@ div#sidebartoggle {
     line-height: 50pt;
 }
 
+
 .title-p span{
     color: var(--light-green);
+    font-family: "Nunito-extrabold";
 }
 p.title-p {
     margin-bottom: 20px;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: "Nunitomy"; */
 }
 
 p.smaller-title{
@@ -132,6 +176,7 @@ p.smaller-title{
 .points {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .bullet-points{
     display: grid;
@@ -141,6 +186,12 @@ p.smaller-title{
 
 .bannar-text.eight.wide.column {
     padding-left: 0;
+}
+.points p{
+    font-size: 14pt;
+}
+.points img {
+    height: -webkit-fill-available;
 }
 
 /* product css */
@@ -152,7 +203,6 @@ p.smaller-title{
     font-size: var(--h2);
     color: white;
     text-align: center;
-    padding-top: 5%;
 }
 
 .our-products .product{
@@ -187,7 +237,7 @@ section.our-products {
 }
 .product-container{
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 5%;
 }
 .product-containerimg{
     object-fit: contain;
@@ -209,6 +259,8 @@ section.our-products {
     padding: 20px;
 }
 .product-text h2{
+    font-family:"poppins" ;
+    font-weight: 600;
     color: #fefefe;
     font-size: 20pt;
 }
@@ -229,6 +281,7 @@ section.ui.middle.aligned.stackable.grid.fluid.container {
 section.our-products .ui.container {
     width: 1208px;
     padding-right: 6%;
+    padding-top: 5%;
 }
 
 section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
@@ -271,6 +324,10 @@ section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
     background-color: #1e3142;
     border-bottom-right-radius: 30%;
     
+}
+.right-text h5{
+    font-family: "poppins";
+    font-weight: 500;
 }
 .for-pd .ui.grid>.row>.column{
     padding: 5% 5% 8% 8%;
@@ -316,7 +373,6 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
     font-size: var(--h2);
     text-align: center;
     margin-bottom: 15px;
-    font-weight: normal;
 }
 .founder-info{
     text-align: center;
@@ -407,6 +463,10 @@ button.ui.white.button{
     bottom: 0;
     transform: translate(-140px, 130px);
 }
+.founder-info a{
+    font-family: 'poppins';
+    font-weight: 500;
+}
 
 
 /* footer css */
@@ -490,6 +550,14 @@ footer{
 .ui.vertical.segment{
     border-bottom: none;
 }
+footer .menu a{
+    font-family:'poppins' ;
+    font-weight: 400;
+}
+footer .header{
+    font-family: 'poppins';
+    font-weight: 600;
+}
 
 /* sidebar css*/
 .ui.menu:not(.vertical)>.menu {
@@ -541,6 +609,12 @@ footer{
         font-size: 37pt;
         line-height: 40pt;
     }
+    p.whisle-text-heater {
+        font-size: 28pt;
+    }
+        .whistle-placeholder-image{
+            right: 0;
+        }
 }
 
 @media screen  and (max-width: 1080px){
