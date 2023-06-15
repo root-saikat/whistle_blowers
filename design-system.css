@@ -189,6 +189,7 @@ p.smaller-title{
 }
 .points p{
     font-size: 14pt;
+    color: #3d4440;
 }
 .points img {
     height: -webkit-fill-available;
@@ -390,6 +391,7 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
 .founder-info p{
     font-size: var(--text-sm);
     padding: 0 10%;
+    color: #4d4b4b;
 }
 .founder-info a{
     font-size: var(--text-md);
