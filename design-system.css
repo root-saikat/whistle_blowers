@@ -924,6 +924,10 @@ footer .header{
         width: 95%;
         height: 43%;
     }
+    .points p{
+        font-size: 14pt;
+        text-align:start;
+    }
     
 }
 
@@ -932,14 +936,25 @@ footer .header{
         line-height: 30pt;
         font-size: 30px;
     }
+    .buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    button.ui.large.green.button.drop-shaadow.sml-m,button.ui.large.inverted.green.button.sml-m {
+        font-size: 12px;
+    }
+
     p.smaller-title {
         text-align: initial;
-        padding-left: 0;
+        padding-left: 16px;
         font-size: 11pt;
         line-height: 16pt;
     }
     .points img {
         height: fit-content;
+        padding-top: 0;
     }
     .confidnt-right .title-p {
         font-size: 23pt;
@@ -949,7 +964,11 @@ footer .header{
         white-space: normal;
     }
     .points p {
-        font-size: 9pt;
+        font-size: 12pt;
+        text-align: start;
+    }
+    .bullet-points {
+        padding-left: 15px;
     }
     .our-products .product-title {
         font-size: 20pt;
@@ -992,5 +1011,9 @@ footer .header{
     }
     .copywrite{
         font-size: 8pt;
+    }
+    .points p {
+        font-size: 10pt;
+        text-align: initial;
     }
 }
