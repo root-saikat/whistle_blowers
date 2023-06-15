@@ -901,6 +901,9 @@ footer{
         font-size: 28px;
     }
     .email-input input[type="text"] {
-        width: 140px;
+        width: 100px;
+    }
+    .copywrite{
+        font-size: 8pt;
     }
 }
