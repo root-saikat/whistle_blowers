@@ -740,6 +740,10 @@ footer .header{
     .points img{
         padding-top: 3px;
     }
+    section.our-products .ui.container {
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
 }
 
 @media screen  and (max-width: 765px)  {
