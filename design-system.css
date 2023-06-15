@@ -89,7 +89,6 @@ nav.ui.navbar.container {
     color: var(--primary-color);
 
 }
-
 .ui.menu .item{
     padding: 0 20px 0 0;
 }
@@ -102,15 +101,11 @@ nav.ui.navbar.container {
     background: none;
     color: var(--primary-color);
 }
-
-
-
-
-
-
+div#sidebartoggle {
+    cursor: pointer;
+}
 
 /* bannar css */
-
 .ui.vertical.stripe.segment.for-mt {
     margin-top: 50px;
 }
@@ -144,21 +139,11 @@ p.smaller-title{
     margin-bottom: 30px;
 }
 
-
-/* .b-img{
-    position: relative;
+.bannar-text.eight.wide.column {
+    padding-left: 0;
 }
 
-.bannar-img{
-    position: absolute;
-    right: -20px;
-} */
-
-
-
-
 /* product css */
-
 .product{
     display: flex;
 }
@@ -194,14 +179,12 @@ p.smaller-title{
     justify-content: space-between;
 }
 
-
 section.our-products {
     margin-left: 5%;
     background: var(--secondary-bg);
     border-top-left-radius: 50px;
     margin-top: 60px;
 }
-
 .product-container{
     position: relative;
     padding-bottom: 50px;
@@ -233,21 +216,28 @@ section.our-products {
     color: #c4c3c6;
     font-size: 12pt;
 }
-
 .btn-div{
     margin-top: 50px;
     text-align: center;
 }
 
-section.our-products .ui.container {
-    width: 1170px;
-    padding-right: 6%;
-}
+/* positioning */
 section.ui.middle.aligned.stackable.grid.fluid.container {
     padding-left: 1%;
 }
 
+section.our-products .ui.container {
+    width: 1208px;
+    padding-right: 6%;
+}
 
+section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
+    padding-left: .7%;
+}
+.brands .ui.container.grid.slider-img {
+    width: 1208px;
+    padding-right: 6%;
+}
 
 /* brands icons css */
 .brands{
@@ -276,45 +266,34 @@ section.ui.middle.aligned.stackable.grid.fluid.container {
 }
 
 
-
-
-
 /* confidnt segment css*/
-
 .confidnt-left{
     background-color: #1e3142;
     border-bottom-right-radius: 30%;
     
 }
-
 .for-pd .ui.grid>.row>.column{
     padding: 5% 5% 8% 8%;
 }
-
 .confidnt-left h3{
     color: white;
     font-size: var(--h5);
     white-space: nowrap;
 }
-
 .confidnt-left p{
     font-size: var(--text-sml);
     color: #fefefe;
 }
-
 .confidnt-right .title-p{
     font-size: var(--h2);
     line-height: 40pt;
     font-weight: normal;
     margin-top: 15px;
 }
-
-
 .confidnt-right .snd-p{
     font-size: var(--text-sm);
     color: #616060;
 }
-
 .confidnt-points{
     display: flex;
     gap: 15px;
@@ -323,7 +302,6 @@ section.ui.middle.aligned.stackable.grid.fluid.container {
 .confidnt-p-img{
     padding-top: 6px;
 }
-
 .confidnt-points .right-text p{
     font-size: var(--text-smml);
     color: #656363;
@@ -333,7 +311,6 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
     padding-top: 0;
 }
 
-
 /* founders segment css */
 .Founders .f-title{
     font-size: var(--h2);
@@ -341,37 +318,27 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
     margin-bottom: 15px;
     font-weight: normal;
 }
-.founder-img.eight.wide.column.f-one{
-    padding-left: 3%;
-}
-
 .founder-info{
     text-align: center;
     padding-top: 10px;
 }
-
 .founder-info h5{
     font-weight: bolder;
     color: #000000;
 }
 .founder-info p{
     font-size: var(--text-sm);
-    /* text-align: justify; */
-    /* margin-bottom: 18px; */
     padding: 0 10%;
 }
-
 .founder-info a{
     font-size: var(--text-md);
     color: var(--primary-color);
 }
-
 .ui.card {
     width: 100%;
     border: none;
     box-shadow: none;
 }
-
 .ui.card>.content{
     border-top: none;
 }
@@ -384,6 +351,62 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
     object-fit: contain;
 }
 
+/* for whistle blower segment css */
+.for-wistle{
+    background-color: var(--primary-color);
+    margin-right: 4%;
+    border-top-right-radius: 50px;
+    position: relative;
+    margin-bottom: 283px;
+}
+.secondary-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+}
+.secondary-bg img{
+    height: 100%;
+}
+.wistle-container.stackable.two.column.row {
+    padding: 5% 0 5% 0;
+}
+.ui.six.column.grid {
+    /* justify-content: center; */
+    padding: 30px 0 30px 20px;
+}
+.whisle-text-heater{
+    font-size: var(--h2);
+    color: white;
+    margin-bottom: 5px;
+}
+.wistle .text-sm{
+    color: white;
+}
+button.ui.white.button{
+    color: var(--secondary-bg);
+    border-radius: 30px;
+}
+.whistle-placeholder{
+    position: relative;
+}
+.whistle-placeholder-image{
+    position: absolute;
+    right: -50px;
+    top: 0;
+}
+.whistle .image-container{
+    position: relative;
+}
+.ui.column.grid.image-container{
+    position: relative;
+}
+.ui.column.grid.image-container .top-image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-140px, 130px);
+}
 
 
 /* footer css */
@@ -391,7 +414,6 @@ footer{
     background-color: var(--secondary-bg);
     margin-top: 40px;
 }
-
 .footer-logo{
     border-bottom: 1px solid var(--border-color);
     text-align: center;
@@ -399,20 +421,16 @@ footer{
     padding-bottom: 20px;
     object-fit: contain;
 }
-
 .footer-logo img{
     object-fit: contain;
 }
-
 .email-input{
     padding: 20px 0;
     text-align: center;
 }
-
 .ui.action.input:not([class*="left action"])>.button:last-child{
     border-radius: 30px;
 }
-
 .ui.input>input{
     background: transparent;
     border: 1px solid transparent;
@@ -423,14 +441,12 @@ footer{
     padding: 3px;
     width: 50%;
 }
-
 .ui.input>input:focus{
     background-color: transparent;
     outline: none;
     color: white;
     border: 1px solid var(--secondary-bg);
 }
-
 .ui.menu.grid.footer-menu {
     background: transparent;
 }
@@ -440,8 +456,6 @@ footer{
     color: white;
     align-items: flex-start;
 }
-
-
 .item.four.wide.column .menu {
     display: flex;
     flex-direction: column;
@@ -466,7 +480,6 @@ footer{
 .f-f-p{
     padding-bottom: 50px;
 }
-
 .copywrite{
     background: var(--primary-color);
     text-align: center;
@@ -474,7 +487,6 @@ footer{
     padding:20px 0 ;
     font-size: 10pt;
 }
-
 .ui.vertical.segment{
     border-bottom: none;
 }
@@ -483,8 +495,6 @@ footer{
 .ui.menu:not(.vertical)>.menu {
     display: none;
 }
-
-
 .ui.sidebar.vertical.right.inverted.menu.uncover.visible {
     text-align: center;
     background: var(--secondary-bg);
@@ -494,13 +504,17 @@ footer{
 }
 
 
-
-
-
-
 /* responsive css */
-
-
+@media screen  and (max-width: 1600px){
+    section.our-products .ui.container {
+        width: 1190px;
+        padding-right: 6%;
+    }
+    section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg{
+        padding-left: 1%;
+    }
+    
+}
 @media screen  and (max-width: 1282px){
     section.our-products .ui.container {
         width: 1136px;
@@ -511,6 +525,9 @@ footer{
     }
     .brands {
         margin-left: 2%;
+    }
+    section.our-products .ui.container {
+        padding-right: 4%;
     }
 }
 @media screen  and (max-width: 1200px){
@@ -537,9 +554,15 @@ footer{
     .brands {
         margin-left: 3%;
     }
+    section.our-products .ui.container {
+        padding-right: 3%;
+    }
 }
 
 @media screen  and (max-width: 992px){
+    section.ui.middle.aligned.stackable.grid.fluid.container {
+        padding-left: 2.5%;
+    }
     .ui.menu:not(.vertical)>.menu {
         display: flex;
         margin-left: auto;
@@ -593,10 +616,51 @@ footer{
         width: 723px;
         padding-right: 0;
     }
+    .for-wistle{
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .ui.six.column.grid{
+        padding: 30px 0 30px 0px;
+    }
+    p.whisle-text-heater {
+        font-size: 20pt;
+    }
+    .wistle .text-sm {
+        font-size: 12pt;
+    }
+    .bottom-image img {
+        width: 400px;
+    }
+    .whistle-placeholder-image{
+        position: absolute;
+        right: -25px;
+        top: 0;
+    }
+    .ui.column.grid.image-container .top-image{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(-80px, 100px);
+    }
+    .top-image img{
+        width: 300px;
+    }
+    .for-wistle{
+        margin-bottom: 120px;
+    }
+    .our-products .product-title, .Founders .f-title{
+        font-size: 30pt;
+    }
+    .Founders .f-title{
+        margin-bottom: 40px;
+    }
 }
 
-
 @media screen  and (max-width: 765px)  {
+    section.ui.middle.aligned.stackable.grid.fluid.container {
+        padding-left: 0;
+    }
     img.ui.image {
         width: 90%;
     }
@@ -652,7 +716,7 @@ footer{
         padding: 2rem 2rem 3rem 4rem!important;
     }
     .confidnt-right .title-p {
-        font-size: 26pt;
+        font-size: 25pt;
     }
     .confidnt-right .snd-p {
         font-size: 12pt;
@@ -731,9 +795,50 @@ footer{
     }
     .ui.vertical.stripe.segment.for-mt.for-pd{
         margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .whistle-placeholder-image{
+        position: inherit;
+    }
+    .bottom-image img {
+        width: 330px;
+    }
+    .top-image img{
+        width: 200px;
+    }
+    .ui.six.column.grid {
+        display: flex;
+        justify-content: center;
+    }
+    .wistle.column.fourteen.wide {
+        text-align: center;
+    }
+    p.whisle-text-heater {
+        font-size: 24pt;
+        margin-bottom: 12px;
+    }
+    .secondary-bg{
+        height: 38%;
+    }
+    .ui.column.grid.image-container .top-image {
+        transform: translate(-37px, 25px);
+    }
+    .ui.column.grid.image-container {
+        margin-bottom: -140px;
+    }
+    .for-wistle {
+        margin-bottom: 160px;
+    }
+    .Founders .f-title {
+        margin-bottom: 25px;
+    }
+    .p-d-b {
+        top: 31%;
+        left: 2%;
+        width: 95%;
+        height: 43%;
     }
 }
-
 
 @media screen and (max-width: 368px){
     p.title-p {
@@ -759,5 +864,43 @@ footer{
     .points p {
         font-size: 9pt;
     }
+    .our-products .product-title {
+        font-size: 20pt;
+    }
+    .bottom-image img {
+        width: 300px;
+    }
+    p.whisle-text-heater {
+        font-size: 22pt;
+    }
+    .wistle .text-sm {
+        font-size: 11pt;
+    }
+}
 
+@media screen and (max-width: 320px){
+    .buttons {
+        display: grid;
+        gap: 10px;
+    }
+    .confidnt-right .title-p {
+        font-size: 18pt;
+        line-height: 30pt;
+    }
+    .bottom-image img {
+        width: 260px;
+    }
+    p.whisle-text-heater {
+        font-size: 19pt;
+    }
+    .Founders .f-title {
+        font-size: 20pt;
+    }
+    p.title-p {
+        line-height: 27pt;
+        font-size: 28px;
+    }
+    .email-input input[type="text"] {
+        width: 140px;
+    }
 }
