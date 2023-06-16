@@ -192,7 +192,8 @@ p.smaller-title{
     color: #3d4440;
 }
 .points img {
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
+    height: fit-content;
 }
 
 
