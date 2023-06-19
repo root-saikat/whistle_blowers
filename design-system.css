@@ -24,7 +24,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: "Nunito-extrabold";
+    font-family: "Nunito-bold";
     src: url("./assets/font/Nunito-Bold.ttf")
 }
 @font-face {
@@ -35,22 +35,30 @@
     font-family: "Nunito-light";
     src: url("./assets/font/Nunito-Light.ttf")
 }
-
-
-
-body{
-    font-family: 'poppins', sans-serif;
-    font-family: 'nunito', sans-serif;
+@font-face {
+    font-family: "Myriad-Pro";
+    src: url("./assets/font/MYRIADPRO-REGULAR.OTF")
 }
 
+.Myriad-Pro{
+    font-family: 'Myriad-Pro';
+}
+
+/* body{
+    font-family: 'poppins', sans-serif;
+} */
+
 .nunito-bold{
-    font-family: "Nunito-extrabold";
+    font-family: "Nunito-bold";
+    font-weight: 700;
 }
 .nunito-normal{
     font-family:"Nunito-regular";
+    font-weight: 400;
 }
 .nunito-light{
     font-family:"Nunito-light";
+    font-weight: 300;
 }
 .popins-bold{
     font-family: 'poppins';
@@ -109,7 +117,7 @@ h5{
     border-radius: 30px;
 }
 
-/* menu css */
+/* menu nav css */
 .ui.menu{
     border: none;
     border-radius: 0;
@@ -124,8 +132,17 @@ nav.ui.navbar.container {
 .right.menu a.item{
     font-size: var(--text-sm);
     color: #242122;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+.ui.button{
+    font-family: 'poppins';
+    font-weight: 500;
 }
 
+.ui.menu:not(.vertical) .item>.button, .ui.large.button{
+    font-size: 16pt;
+}
 .ui.menu .active.item {
     background: none;
     color: var(--primary-color);
@@ -161,7 +178,7 @@ div#sidebartoggle {
 
 .title-p span{
     color: var(--light-green);
-    font-family: "Nunito-extrabold";
+    font-family: "Nunito-bold";
 }
 p.title-p {
     margin-bottom: 20px;
@@ -206,6 +223,8 @@ p.smaller-title{
     font-size: var(--h2);
     color: white;
     text-align: center;
+    position: relative;
+    z-index: 5555;
 }
 
 .our-products .product{
@@ -266,10 +285,16 @@ section.our-products {
     font-weight: 600;
     color: #fefefe;
     font-size: 20pt;
+    position: relative;
+    z-index: 5555;
 }
 .product-text p{
     color: #c4c3c6;
     font-size: 12pt;
+    font-family: 'poppins';
+    font-weight: 400;
+    position: relative;
+    z-index: 5555;
 }
 .btn-div{
     margin-top: 50px;
@@ -336,6 +361,11 @@ section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
     font-family: "poppins";
     font-weight: 500;
 }
+.right-text p{
+    font-family: "poppins";
+    font-weight: 400;
+}
+
 .for-pd .ui.grid>.row>.column{
     padding: 5% 5% 8% 8%;
 }
@@ -347,6 +377,8 @@ section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
 .confidnt-left p{
     font-size: var(--text-sml);
     color: #fefefe;
+    font-family: "poppins";
+    font-weight: 400;
 }
 .confidnt-right .title-p{
     font-size: var(--h2);
@@ -388,14 +420,15 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
 .founder-info h5{
     font-weight: bolder;
     color: #000000;
+    font-size: 24pt;
 }
 .founder-info p{
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
     padding: 0 10%;
     color: #4d4b4b;
 }
 .founder-info a{
-    font-size: var(--text-md);
+    font-size: var(--text-lg);
     color: var(--primary-color);
 }
 .ui.card {
@@ -475,6 +508,10 @@ button.ui.white.button{
     font-family: 'poppins';
     font-weight: 500;
 }
+.wistle.column {
+    position: relative;
+    z-index: 5555;
+}
 
 
 /* footer css */
@@ -533,7 +570,7 @@ footer{
 
 .item.four.wide.column .menu a{
     color: #808b96;
-    font-size: 12pt;
+    font-size: 13pt;
     white-space: nowrap;
 }
 
@@ -554,6 +591,9 @@ footer{
     color: white;
     padding:20px 0 ;
     font-size: 10pt;
+}
+.copywrite span{
+    font-size: 14pt;
 }
 .ui.vertical.segment{
     border-bottom: none;
@@ -747,6 +787,15 @@ footer .header{
         padding-top: 12%;
         padding-bottom: 12%;
     }
+    .buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ui.large.button {
+        font-size: 14pt;
+    }
 }
 
 @media screen  and (max-width: 765px)  {
@@ -935,7 +984,9 @@ footer .header{
         font-size: 14pt;
         text-align:start;
     }
-    
+    .ui.large.button {
+        font-size: 12pt;
+    }
 }
 
 @media screen and (max-width: 368px){
@@ -950,7 +1001,7 @@ footer .header{
         justify-content: center;
     }
     button.ui.large.green.button.drop-shaadow.sml-m,button.ui.large.inverted.green.button.sml-m {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     p.smaller-title {
