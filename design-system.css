@@ -423,12 +423,12 @@ section.ui.middle.aligned.stackable.grid.fluid.container .row{
     font-size: 24pt;
 }
 .founder-info p{
-    font-size: var(--text-lg);
+    font-size: 16pt;
     padding: 0 10%;
     color: #4d4b4b;
 }
 .founder-info a{
-    font-size: var(--text-lg);
+    font-size: 16pt;
     color: var(--primary-color);
 }
 .ui.card {
