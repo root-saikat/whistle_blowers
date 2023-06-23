@@ -132,11 +132,11 @@ nav.ui.navbar.container {
 .right.menu a.item{
     font-size: var(--text-sm);
     color: #242122;
-    font-family: 'poppins';
+    font-family: 'poppins',sans-serif;
     font-weight: 400;
 }
 .ui.button{
-    font-family: 'poppins';
+    font-family:'poppins', sans-serif;
     font-weight: 500;
 }
 
@@ -281,7 +281,7 @@ section.our-products {
     padding: 20px;
 }
 .product-text h2{
-    font-family:"poppins" ;
+    font-family:"poppins",sans-serif ;
     font-weight: 600;
     color: #fefefe;
     font-size: 20pt;
@@ -291,7 +291,7 @@ section.our-products {
 .product-text p{
     color: #c4c3c6;
     font-size: 12pt;
-    font-family: 'poppins';
+    font-family: 'poppins',sans-serif;
     font-weight: 400;
     position: relative;
     z-index: 5555;
@@ -358,11 +358,11 @@ section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
     
 }
 .right-text h5{
-    font-family: "poppins";
+    font-family: "poppins",sans-serif;
     font-weight: 500;
 }
 .right-text p{
-    font-family: "poppins";
+    font-family: "poppins",sans-serif;
     font-weight: 400;
 }
 
@@ -377,7 +377,7 @@ section.ui.middle.aligned.stackable.grid.fluid.container.confident-seg {
 .confidnt-left p{
     font-size: var(--text-sml);
     color: #fefefe;
-    font-family: "poppins";
+    font-family: "poppins",sans-serif;
     font-weight: 400;
 }
 .confidnt-right .title-p{
@@ -505,7 +505,7 @@ button.ui.white.button{
     transform: translate(-140px, 130px);
 }
 .founder-info a{
-    font-family: 'poppins';
+    font-family: 'poppins',sans-serif;
     font-weight: 500;
 }
 .wistle.column {
@@ -599,11 +599,11 @@ footer{
     border-bottom: none;
 }
 footer .menu a{
-    font-family:'poppins' ;
+    font-family:'poppins',sans-serif ;
     font-weight: 400;
 }
 footer .header{
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -794,7 +794,7 @@ footer .header{
         justify-content: center;
     }
     .ui.large.button {
-        font-size: 14pt;
+        font-size: 13pt;
     }
 }
 
@@ -881,6 +881,7 @@ footer .header{
     }  
     .item.four.wide.column .header {
         font-size: 14pt;
+        white-space: normal;
     }
     .confidnt-left.six.wide.column.c-d-i {
         height: fit-content;
@@ -985,7 +986,7 @@ footer .header{
         text-align:start;
     }
     .ui.large.button {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 }
 
