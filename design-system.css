@@ -61,11 +61,11 @@
     font-weight: 300;
 }
 .popins-bold{
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-weight: 700;
 }
 .poppins-regular{
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -570,7 +570,7 @@ footer{
 
 .item.four.wide.column .menu a{
     color: #808b96;
-    font-size: 13pt;
+    font-size: 14pt;
     white-space: nowrap;
 }
 
@@ -578,7 +578,7 @@ footer{
     color: var(--primary-color);
 }
 .item.four.wide.column  .header{
-    font-size: var(--h5);
+    font-size: 22pt;
     white-space: nowrap;
 }
 
@@ -989,7 +989,7 @@ footer .header{
     }
 }
 
-@media screen and (max-width: 368px){
+@media screen and (max-width: 375px){
     p.title-p {
         line-height: 30pt;
         font-size: 30px;
@@ -1040,6 +1040,15 @@ footer .header{
     .wistle .text-sm {
         font-size: 11pt;
     }
+    .copywrite span {
+        font-size: 12pt;
+    }
+    .founder-info h5{
+        font-size: 20pt;
+    }
+    .founder-info p {
+        font-size: 12pt;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -1073,5 +1082,8 @@ footer .header{
     .points p {
         font-size: 10pt;
         text-align: initial;
+    }
+    .founder-info h5{
+        font-size: 18pt;
     }
 }
