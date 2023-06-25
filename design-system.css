@@ -246,7 +246,7 @@ p.smaller-title{
 }
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,48%));
+    grid-template-columns: repeat(auto-fill,minmax(48%,48%));
     gap: 30px;
     justify-content: space-between;
 }
