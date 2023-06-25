@@ -988,6 +988,12 @@ footer .header{
     .ui.large.button {
         font-size: 11pt;
     }
+    .copywrite {
+    padding: 20px;
+    }
+    .product-text::before {
+    bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 380px){
@@ -1050,12 +1056,7 @@ footer .header{
     .founder-info p {
         font-size: 12pt;
     }
-    .copywrite {
-    padding: 20px;
-    }
-    .product-text::before {
-    bottom: 5%;
-    }
+    
 }
 
 @media screen and (max-width: 320px){
