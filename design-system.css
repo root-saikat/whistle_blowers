@@ -1053,6 +1053,9 @@ footer .header{
     .copywrite {
     padding: 20px;
     }
+    .product-text::before {
+    bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 320px){
