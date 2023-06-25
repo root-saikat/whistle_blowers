@@ -990,7 +990,7 @@ footer .header{
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 380px){
     p.title-p {
         line-height: 30pt;
         font-size: 30px;
@@ -1049,6 +1049,9 @@ footer .header{
     }
     .founder-info p {
         font-size: 12pt;
+    }
+    .copywrite {
+    padding: 20px;
     }
 }
 
